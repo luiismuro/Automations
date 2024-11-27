@@ -1,0 +1,19 @@
+import multiprocessing
+
+def tarefa(numero):
+    print(f"Processo {numero} iniciado")
+    for i in range(5):
+        print(f"Processo {numero}: {i}")
+
+# Criando processos
+process1 = multiprocessing.Process(target=tarefa, args=(1,))
+process2 = multiprocessing.Process(target=tarefa, args=(2,))
+
+# Iniciando os processos
+process1.start()
+process2.start()
+
+# Aguardando os processos terminarem
+process1.join()
+process2.join()
+print("Tarefas concluídas!")
