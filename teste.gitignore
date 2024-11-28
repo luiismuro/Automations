@@ -1,0 +1,6 @@
+# Ignorar todos os arquivos, exceto "projeto_python_avancado.py"
+*
+!projeto_python_avancado.py
+
+# Ignorar o diretório .vscode
+.vscode/
