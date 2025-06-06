@@ -37,3 +37,8 @@ SignupFormAutomation/
 The file `credentials.properties` contains sensitive data (email and password) **not versioned** on Git. 
 It stores used password on the signup form;
 
+## How to execute:
+
+- Go to the folder src/test/java/
+- Open file SignupTest.java
+- Run
